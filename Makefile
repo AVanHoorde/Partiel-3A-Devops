@@ -3,9 +3,12 @@ start:
   go run ./main.go
 
 test:
-  cd handler && go test && cd ..
+  cd handler 
+	go test 
+	cd ..
 
-build: test
+build: 
+	go test
   go build
 
 infra:
